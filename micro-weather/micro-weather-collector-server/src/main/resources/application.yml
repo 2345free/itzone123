@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+logging:
+  path: logs/
+  level:
+    root: info
+    com.itzone123.weather.collector.server.client: debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+
+spring:
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: itzone123-config-server
+  redis:
+    host: localhost
+    port: 6379

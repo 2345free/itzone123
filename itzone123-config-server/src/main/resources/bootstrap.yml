@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: itzone123-config-server

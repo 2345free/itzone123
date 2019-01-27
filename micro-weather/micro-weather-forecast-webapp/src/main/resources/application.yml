@@ -1,0 +1,25 @@
+server:
+  port: 8085
+
+logging:
+  path: logs/
+  level:
+    root: info
+    com.itzone123.weather.forecast.webapp.client: debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+
+spring:
+  thymeleaf:
+    cache: false

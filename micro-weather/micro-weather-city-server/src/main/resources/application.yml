@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+logging:
+  path: logs/
+  level:
+    root: info
+    com.itzone123.weather.client: debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+
+# 禁止使用eureka发现服务
+ribbon:
+  eureka:
+    enabled: false
+
+# 配置并使用本地服务地址
+city-service:
+  ribbon:
+    listOfServers: https://waylau.com
