@@ -1,0 +1,4 @@
+rootProject.name = 'itzone123'
+
+include 'itzone123-config-server'
+include 'itzone123-eureka-server'

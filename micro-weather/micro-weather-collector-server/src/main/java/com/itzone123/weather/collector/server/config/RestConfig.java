@@ -7,9 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Rest Configuration.
- *
- * @author <a href="https://waylau.com">Way Lau</a>
- * @since 1.0.0 2017年11月22日
  */
 @Configuration
 public class RestConfig {
@@ -24,5 +21,4 @@ public class RestConfig {
     public RestTemplate restTemplate() {
         return builder.build();
     }
-
 }
