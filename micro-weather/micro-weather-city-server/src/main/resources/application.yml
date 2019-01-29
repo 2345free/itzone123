@@ -24,3 +24,12 @@ ribbon:
 city-service:
   ribbon:
     listOfServers: https://waylau.com
+
+spring:
+  sleuth:
+    trace-id128: true
+    sampler:
+      probability: 1.0
+    http:
+      legacy:
+        enabled: true
