@@ -6,6 +6,7 @@ logging:
   level:
     root: info
 
+---
 zuul:
   routes:
     city-service:
@@ -14,3 +15,12 @@ zuul:
     weather-service:
       path: /api/weather-service/**
       serviceId: micro-weather-data-server
+
+---
+spring:
+  rabbitmq:
+    host: ${rabbitmq.host}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}
+    virtual-host: ${rabbitmq.virtual-host}
