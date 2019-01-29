@@ -7,11 +7,6 @@ logging:
     root: info
     com.itzone123.weather.client: debug
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
 feign:
   client:
     config:

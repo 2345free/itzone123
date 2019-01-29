@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: itzone123-eureka-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
