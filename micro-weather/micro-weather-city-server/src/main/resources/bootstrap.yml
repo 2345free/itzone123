@@ -1,6 +1,13 @@
 spring:
   application:
     name: micro-weather-city-server
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: itzone123-config-server
 
 eureka:
   client:
@@ -12,10 +19,3 @@ management:
     web:
       exposure:
         include: "*"
-
----
-spring:
-  sleuth:
-    trace-id128: true
-    sampler:
-      probability: 1.0
