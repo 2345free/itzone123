@@ -2,3 +2,8 @@ rootProject.name = 'itzone123'
 
 include 'itzone123-config-server'
 include 'itzone123-eureka-server'
+include 'micro-weather:micro-weather-city-server'
+include 'micro-weather:micro-weather-collector-server'
+include 'micro-weather:micro-weather-data-server'
+include 'micro-weather:micro-weather-forecast-webapp'
+include 'micro-weather:micro-weather-gateway'

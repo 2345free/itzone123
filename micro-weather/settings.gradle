@@ -1,7 +1,0 @@
-rootProject.name = 'micro-weather'
-
-include 'micro-weather-city-server'
-include 'micro-weather-collector-server'
-include 'micro-weather-data-server'
-include 'micro-weather-forecast-webapp'
-include 'micro-weather-gateway'
